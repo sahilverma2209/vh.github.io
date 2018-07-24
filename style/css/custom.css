@@ -1,3 +1,133 @@
-*{
-    border:1px solid red;
+
+.dropdown-submenu {
+    position: relative;
+}
+.directory{
+  padding-left:15px;
+}
+
+.item_directory{
+  padding-left:15px;
+}
+.pagination{
+  /* border:1px solid red; */
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.list_item{
+  height:35vh;
+  margin-top:2vh;
+  position:relative;
+  /* border:1px solid red; */
+}
+
+.prod_box{
+  position:absolute;
+  top:0%;
+  left:3%;
+  right:3%;
+  bottom:0%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  
+}
+.prod_box:hover{
+  position:absolute;
+  top:-2%;
+  left:1%;
+  right:1%;
+  bottom:-2%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.22), 0 1px 2px rgba(0,0,0,0.34); 
+  transition: top 0.1s ease-in-out, bottom 0.1s ease-in-out, left 0.1s ease-in-out, right 0.1s ease-in-out;
+}
+.prod_img{
+  position:absolute;
+  top:1%;
+  bottom:17%;
+  left:1%;
+  right:1%;
+  margin-top:0;
+  border:1px solid pink;
+}
+
+.prod_desc{
+  /* border:1px solid green; */
+  position:absolute;
+  top:80%;
+  bottom:10%;
+  right:0%;
+  left:0%;
+  font-size:13px;
+  padding-top:5px;
+  text-align:center;
+  
+}
+.prod_id{
+  position:absolute;
+  top:90%;
+  bottom:0%;
+  right:0%;
+  left:0%;
+  font-size:14px;
+  text-align:center;
+}
+.prod_link{
+  text-decoration:none;
+  color:#494949;
+}
+.prod_link:hover{
+  text-decoration:none;
+  color:#494949;
+}
+
+.pb{
+  background-color: rgb(32, 32, 32);
+  border: none;
+  color: white;
+  max-height:30px;
+  width:40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.pb:active{
+  background-color: rgb(138, 136, 136);
+  border: none;
+  color: white;
+  max-height:30px;
+  width:40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.selected_button{
+  background-color: rgb(194, 194, 194);
+  border: none;
+  color: rgb(36, 36, 36);
+  max-height:30px;
+  width:40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.ind_item_image{
+  border:1px solid red;
+  height:60vh;
+  
+}
+
+.ind_item_desc{
+  border:1px solid green;
+  height:60vh;
 }

@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../style/css/custom.css" />
+        
+	</head>
+
+    <body>
+        <div class="container-fluid" style="padding-bottom:5px;">
+            <div class="row">
+                <img src="../assets/home_logo.PNG" /> 
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color:black;">
+            <div style="margin-right:0;margin-left:40%;width:60%;">    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link navtext" href="#" style="color:white;" >HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link navtext" href="#" style="color:white;">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navtext" href="#" style="color:white;">DESIGNERS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a  style="color:white;" class="nav-link dropdown-toggle navtext" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PRODUCTS
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">BAREWARE</a>
+                        <a class="dropdown-item" href="#">CHAFFING DISHES</a>
+                        <a class="dropdown-item" href="#">KITCHENWARE</a>
+                        <a class="dropdown-item" href="#">TABLEWARE</a>
+                        <a class="dropdown-item" href="#">CUTLERY</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:white;">CATALOUGE</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" style="height:30px;" type="search" placeholder="Search" aria-label="Search">
+                    <a href="#"><img src="../assets/search.png" style="height:25px;" /></a>
+                   </form>
+                </div>
+            </div>
+        </nav>
+    </br>
+    
+    <div class="container">
+        <div class="row item_directory"></div>
+    </div>
+    </br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 ind_item_image"></div>
+            <div class="col-md-7 ind_item_desc"></div>
+        </div>
+    </div>
+
+    <script src="../style/js/jquery.min.js"></script>
+    <script src="../style/js/bootstrap.min.js"></script>
+    <script data-main="config" src="require.js"></script>
+    <script>
+      require(['config'], function(){
+        require(['../style/js/item.js']);
+      });
+    </script>
+    
+    </body>
+</html>
