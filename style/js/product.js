@@ -82,7 +82,7 @@ define([cat], function(){
             console.log('My height is: ', this.naturalHeight);
             
             if(this.naturalHeight>this.naturalWidth){
-                $(this).css("height", "70%");
+                $(this).css("height", "80%");
                 $(this).css("width", "auto");
                 $(this).css("margin-top", "10%");   
             }else{
