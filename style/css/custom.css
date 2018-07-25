@@ -47,9 +47,13 @@
   left:1%;
   right:1%;
   margin-top:0;
-  border:1px solid pink;
+  /* border:1px solid pink; */
 }
-
+.img_size{
+  height:70%;
+  margin-top:10%;
+  width:auto;
+}
 .prod_desc{
   /* border:1px solid green; */
   position:absolute;

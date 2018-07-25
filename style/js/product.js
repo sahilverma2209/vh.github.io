@@ -65,13 +65,40 @@ define([cat], function(){
     // initialize images for page 1
     var display_products = product_list.slice((selected_page*8)-7, (selected_page*8)+1);
     for(var x=1; x<=display_products.length; x++){
+
         var div = '#p'+x;
         // $(div).append('<div id='+x+'>'+display_products[x-1]['FIELD2']+'</div>');
-        $(div).append('<a class="prod_link" id="a'+x+'" href="item.html#'+cat+'#'+display_products[x-1]['FIELD3']+'"><div class="prod_box"><div class="prod_img"></div><div class="prod_desc" id="'+x+'">'+display_products[x-1]['FIELD2']+'</div><div class="prod_id" id="i'+x+'">'+display_products[x-1]['FIELD3']+'</div></div></a>');
+        var img_ref = '../assets/barware/'+display_products[x-1]['FIELD3']+'.jpg';
+        console.log(img_ref);
+        $(div).append('<a class="prod_link" id="a'+x+'" href="item.html#'+cat+'#'+display_products[x-1]['FIELD3']+'"><div class="prod_box"><div class="prod_img" id="img'+x+'"></div><div class="prod_desc" id="'+x+'">'+display_products[x-1]['FIELD2']+'</div><div class="prod_id" id="i'+x+'">'+display_products[x-1]['FIELD3']+'</div></div></a>');
+        var img_append = '#img'+x;
+        $(img_append).append('<center><img id="myimage'+x+'" src="'+img_ref+'" class="img_size" /></center>');
+        
+        // check height and width to adjust css ------------
+        var check=document.getElementById('myimage'+x);
+        console.log(check);
+        check.addEventListener('load', function() {
+            console.log('My width is: ', this.naturalWidth);
+            console.log('My height is: ', this.naturalHeight);
+            
+            if(this.naturalHeight>this.naturalWidth){
+                $(this).css("height", "70%");
+                $(this).css("width", "auto");
+                $(this).css("margin-top", "10%");   
+            }else{
+                $(this).css("width", "70%");
+                $(this).css("max-height", "80%");
+                $(this).css("margin-top", "7%");
+            }
+        });
+
+        
+
     }
 
     
     $(".pb").click(function(){
+        location.reload();
         $('.pb').removeClass("selected_button");
 
         selected_page = parseInt($(this).html());  
@@ -95,9 +122,13 @@ define([cat], function(){
             var div2 = '#i'+x;
             var link_tag = '#a'+x;
             var new_link = "item.html#"+cat+"#"+display_products[x-1]['FIELD3'];
+            var img_tag = '#img'+x;
+            var new_img_ref = '../assets/barware/'+display_products[x-1]['FIELD3']+'.jpg';
+            console.log('new img rref = ', new_img_ref);
             $(div).html(display_products[x-1]['FIELD2']);
             $(div2).html(display_products[x-1]['FIELD3']);
             $(link_tag).attr('href', new_link);
+            $(img_tag).attr('src', new_img_ref);
         }
 
 
