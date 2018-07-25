@@ -79,7 +79,19 @@
   text-decoration:none;
   color:#494949;
 }
-
+#prev_section, #next_section{
+  background-color: rgb(32, 32, 32);
+  border: none;
+  color: white;
+  max-height:30px;
+  width:40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 .pb{
   background-color: rgb(32, 32, 32);
   border: none;
