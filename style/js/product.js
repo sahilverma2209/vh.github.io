@@ -16,6 +16,7 @@ define([product], function(){
     // initialize directory link
     $('.directory').html('Home > Products > '+product+'');
 
+    window.history.pushState({ page :'1'}, null, '/products/'+product+'/'+selected_page);
 
     // initialize page buttons
     
@@ -49,6 +50,8 @@ define([product], function(){
         var id = $(this).attr('id');
 
         if(id !== 'page9')$(this).addClass("selected_button");
+
+        window.history.pushState({ page :'1'}, product, '/products/'+product+'/'+selected_page);
 
         //update images 
         var display_products = product_list.slice((selected_page*8)-7, (selected_page*8)+1);
