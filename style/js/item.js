@@ -37,8 +37,9 @@ define([category], function(){
         }
     }
 
-    console.log(item_details);
-    var deets = item_details['FIELD1']+" "+item_details['FIELD2']+" "+item_details['FIELD3'];
-    console.log(deets);
-    $(".ind_item_desc").html(deets);
+    // console.log(item_details);
+    $(".item_name").html('Product Name : '+item_details['FIELD2']);
+    $(".item_code").html('Product Code : '+item_details['FIELD3']);
+    $(".item_dimensions").html('Dimensions : '+item_details['FIELD4']+'x'+item_details['FIELD5']+'x'+item_details['FIELD6']);
+    
 });
