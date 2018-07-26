@@ -1,3 +1,4 @@
+var directory_tag = 'Exclusive Brass Collection';
 var product_list = [
  {
    "FIELD1": "S.NO",

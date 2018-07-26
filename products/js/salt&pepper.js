@@ -1,3 +1,4 @@
+var directory_tag = 'Slat & Pepper';
 var product_list = [
  {
    "FIELD1": "S.NO",

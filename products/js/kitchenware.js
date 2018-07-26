@@ -1,4 +1,4 @@
-
+var directory_tag = 'Kitchenware';
 var product_list = [
     {
       "FIELD1": "S.NO",

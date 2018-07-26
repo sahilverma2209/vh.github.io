@@ -1,3 +1,5 @@
+
+var directory_tag = 'Ash Tray & Water Jugs';
 var product_list = [
  {
    "FIELD1": "S.NO",

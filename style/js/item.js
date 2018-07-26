@@ -27,7 +27,7 @@ var item_details={};
 define([category], function(){
 
     // initialize directory link
-    $('.item_directory').html('Home > Products > '+category+' > '+prod_code);
+    $('.item_directory').html('Home > Products > '+directory_tag+' > '+prod_code);
 
     console.log(product_list);
     for(var i=1; i<product_list.length; i++){
@@ -38,8 +38,47 @@ define([category], function(){
     }
 
     // console.log(item_details);
-    $(".item_name").html('Product Name : '+item_details['FIELD2']);
-    $(".item_code").html('Product Code : '+item_details['FIELD3']);
-    $(".item_dimensions").html('Dimensions : '+item_details['FIELD4']+'x'+item_details['FIELD5']+'x'+item_details['FIELD6']);
+    var img_ref = '../assets/'+category+'/'+prod_code+'.jpg';
+    $(".img_box").append('<center><img src="'+img_ref+'" id="item_image_style" /></center>');
+
+    // check height and width to adjust css ------------
+    var check=document.getElementById('item_image_style');
+    console.log('element = ',check);
+    check.addEventListener('load', function() {
+        console.log('My width is: ', this.naturalWidth);
+        console.log('My height is: ', this.naturalHeight);
+        
+        if(this.naturalHeight>this.naturalWidth){
+            $(this).css("height", "90%");
+            $(this).css("width", "auto");
+
+            // vertically centering the image 
+            var ph = $('.img_box').height();
+            var ih = $('#item_image_style').height();
+            var mtop = (ph-ih)/2+'px';
+            $(this).css('margin-top', mtop );
+
+
+        }else{
+            $(this).css("width", "90%");
+            $(this).css("height", "auto");
+
+            // vertically centering the image 
+            var ph = $('.img_box').height();
+            var ih = $('#item_image_style').height();
+            var mtop = (ph-ih)/2+'px';
+            $(this).css('margin-top', mtop );
+            var max_ht = ph-15+'px';
+            $(this).css('max-height', max_ht );
+
+        }
+        
+    });
+    
+    $(".item_name").html(item_details['FIELD2']);
+    $(".item_code").html(item_details['FIELD3']);
+    $(".item_dimensions").html(item_details['FIELD4']+'cm x '+item_details['FIELD5']+'cm x '+item_details['FIELD6']+'cm');
+
+    
     
 });

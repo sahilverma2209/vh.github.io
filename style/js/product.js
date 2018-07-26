@@ -38,7 +38,7 @@ define([cat], function(){
     // console.log('page end = ', page_end);
     if(page_end>pages)page_end=pages;
     // initialize directory link
-    $('.directory').html('Home > Products > '+cat+'');
+    $('.directory').html('Home > Products > '+directory_tag+'');
 
 
     // initialize page buttons
@@ -68,7 +68,7 @@ define([cat], function(){
 
         var div = '#p'+x;
         // $(div).append('<div id='+x+'>'+display_products[x-1]['FIELD2']+'</div>');
-        var img_ref = '../assets/barware/'+display_products[x-1]['FIELD3']+'.jpg';
+        var img_ref = '../assets/'+cat+'/'+display_products[x-1]['FIELD3']+'.jpg';
         console.log(img_ref);
         $(div).append('<a class="prod_link" id="a'+x+'" href="item.html#'+cat+'#'+display_products[x-1]['FIELD3']+'"><div class="prod_box"><div class="prod_img" id="img'+x+'"></div><div class="prod_desc" id="'+x+'">'+display_products[x-1]['FIELD2']+'</div><div class="prod_id" id="i'+x+'">'+display_products[x-1]['FIELD3']+'</div></div></a>');
         var img_append = '#img'+x;
@@ -82,13 +82,34 @@ define([cat], function(){
             console.log('My height is: ', this.naturalHeight);
             
             if(this.naturalHeight>this.naturalWidth){
-                $(this).css("height", "80%");
+                $(this).css("height", "85%");
                 $(this).css("width", "auto");
-                $(this).css("margin-top", "10%");   
+                // vertically centering the image 
+                var ph = $(img_append).height();
+                var ih = $(this).height();
+                var mtop = (ph-ih)/2+'px';
+                $(this).css('margin-top', mtop );
+                
             }else{
                 $(this).css("width", "70%");
-                $(this).css("max-height", "80%");
-                $(this).css("margin-top", "7%");
+                $(this).css("height", "auto");
+                // vertically centering the image  
+                var ph = $(img_append).height();
+                var ih = $(this).height();
+                console.log(ph);console.log(ih);
+                var mtop = (ph-ih)/2+'px';
+                $(this).css('margin-top', mtop );
+
+                if(this.naturalWidth/this.naturalHeight < 1.3){
+                    $(this).css("width", "auto");
+                    $(this).css("height", "90%");
+                    var ph = $(img_append).height();
+                    var ih = $(this).height();
+                    var mtop = (ph-ih)/2+'px';
+                    $(this).css('margin-top', mtop );
+                }
+                // var max_ht = ph-15+'px';
+                // $(this).css('max-height', max_ht ); 
             }
         });
 

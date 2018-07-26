@@ -1,5 +1,5 @@
 
-
+var directory_tag = 'Barware';
 var product_list = [
  {
   "FIELD1":"S.NO",
@@ -309,20 +309,20 @@ var product_list = [
   "FIELD11":"12",
   "FIELD12":"0.0812"
  },
- {
-  "FIELD1":"22",
-  "FIELD2":"COCKTAIL SHAKER",
-  "FIELD3":"IB 6117 CH",
-  "FIELD4":"9",
-  "FIELD5":"9",
-  "FIELD6":"19",
-  "FIELD7":"56",
-  "FIELD8":"20",
-  "FIELD9":"41",
-  "FIELD10":"",
-  "FIELD11":"24",
-  "FIELD12":"0.0459"
- },
+//  {
+//   "FIELD1":"22",
+//   "FIELD2":"COCKTAIL SHAKER",
+//   "FIELD3":"IB 6117 CH",
+//   "FIELD4":"9",
+//   "FIELD5":"9",
+//   "FIELD6":"19",
+//   "FIELD7":"56",
+//   "FIELD8":"20",
+//   "FIELD9":"41",
+//   "FIELD10":"",
+//   "FIELD11":"24",
+//   "FIELD12":"0.0459"
+//  },
  {
   "FIELD1":"23",
   "FIELD2":"WINE BUCKET COPPER HAMMERED",
@@ -368,7 +368,7 @@ var product_list = [
  {
   "FIELD1":"26",
   "FIELD2":"PUNCH BOWL COPPER HAMMERED",
-  "FIELD3":"PB  47945 CH",
+  "FIELD3":"PB 47945 CH",
   "FIELD4":"39.5",
   "FIELD5":"39.5",
   "FIELD6":"26.5",
@@ -760,7 +760,7 @@ var product_list = [
  {
   "FIELD1":"54",
   "FIELD2":"COCKTAIL SHAKER FLORAL",
-  "FIELD3":"CS 6151 F R",
+  "FIELD3":"CS 6151 FR",
   "FIELD4":"9",
   "FIELD5":"9",
   "FIELD6":"19",
@@ -788,7 +788,7 @@ var product_list = [
  {
   "FIELD1":"56",
   "FIELD2":"ICE TONG FLORAL",
-  "FIELD3":"8927 FLORAL",
+  "FIELD3":"8927 FR",
   "FIELD4":"18.5",
   "FIELD5":"3",
   "FIELD6":"2.5",
@@ -1222,7 +1222,7 @@ var product_list = [
  {
   "FIELD1":"87",
   "FIELD2":"CHAMPAGNE COOLER ROCK HAMMERED",
-  "FIELD3":"CH 6106 rc",
+  "FIELD3":"CH 6106 RC",
   "FIELD4":"12",
   "FIELD5":"12",
   "FIELD6":"20",
@@ -1376,7 +1376,7 @@ var product_list = [
  {
   "FIELD1":"98",
   "FIELD2":"ICE BUCKET LARGE HAMMERED",
-  "FIELD3":"IB 6117 H C",
+  "FIELD3":"IB 6117 H",
   "FIELD4":"19",
   "FIELD5":"15.5",
   "FIELD6":"16",
@@ -1530,7 +1530,7 @@ var product_list = [
  {
   "FIELD1":"109",
   "FIELD2":"WINE COOLER CROCODILE ETCHING",
-  "FIELD3":"CH 6106",
+  "FIELD3":"CH 6106 CR",
   "FIELD4":"12",
   "FIELD5":"12",
   "FIELD6":"20",
@@ -2160,7 +2160,7 @@ var product_list = [
  {
   "FIELD1":"154",
   "FIELD2":"COCKTAIL SHAKER RICE HAMMERED",
-  "FIELD3":"CS 6152",
+  "FIELD3":"CS 6152 RH",
   "FIELD4":"9",
   "FIELD5":"9",
   "FIELD6":"24",
@@ -2618,21 +2618,7 @@ var product_list = [
   "FIELD10":"",
   "FIELD11":"24",
   "FIELD12":"0.066"
- },
- {
-  "FIELD1":"187",
-  "FIELD2":"WINE BUCKET RAIN",
-  "FIELD3":"WB 241 N",
-  "FIELD4":"22",
-  "FIELD5":"22",
-  "FIELD6":"20",
-  "FIELD7":"70",
-  "FIELD8":"45",
-  "FIELD9":"45",
-  "FIELD10":"",
-  "FIELD11":"12",
-  "FIELD12":"0.141"
- },
+ }, 
  {
   "FIELD1":"188",
   "FIELD2":"WINE COOLER RAIN",
@@ -2705,7 +2691,7 @@ var product_list = [
  },
  {
   "FIELD1":"193",
-  "FIELD2":"ICE BUCKET LARGE  PREMIUM LEATHER",
+  "FIELD2":"ICE BUCKET LARGE PREMIUM LEATHER",
   "FIELD3":"IB 6127 PL",
   "FIELD4":"19",
   "FIELD5":"15.5",
@@ -3028,7 +3014,7 @@ var product_list = [
  {
   "FIELD1":"216",
   "FIELD2":"ICE BUCEKT D/W SMALL WALNUT LEATHER",
-  "FIELD3":"IB 6116 W/L",
+  "FIELD3":"IB 6116 WL",
   "FIELD4":"15",
   "FIELD5":"12",
   "FIELD6":"13.5",
@@ -3042,7 +3028,7 @@ var product_list = [
  {
   "FIELD1":"217",
   "FIELD2":"ICE BUCEKT D/W LARGE WALNUT LEATHER",
-  "FIELD3":"IB 6117 W/L",
+  "FIELD3":"IB 6117 WL",
   "FIELD4":"19",
   "FIELD5":"15.5",
   "FIELD6":"16",
@@ -3056,7 +3042,7 @@ var product_list = [
  {
   "FIELD1":"218",
   "FIELD2":"COCKTAIL SHAKER WALNUT LEATHER",
-  "FIELD3":"CS 3416 W/L",
+  "FIELD3":"CS 3416 WL",
   "FIELD4":"9",
   "FIELD5":"9",
   "FIELD6":"24",
@@ -3070,7 +3056,7 @@ var product_list = [
  {
   "FIELD1":"219",
   "FIELD2":"WINE BUCKET WALNUT LEATHER",
-  "FIELD3":"WB 241 W/L",
+  "FIELD3":"WB 241 WL",
   "FIELD4":"22",
   "FIELD5":"22",
   "FIELD6":"20.5",
@@ -3140,7 +3126,7 @@ var product_list = [
  {
   "FIELD1":"224",
   "FIELD2":"ICE BUCKET D/W SMALL BLACK LEATHER",
-  "FIELD3":"IB 6116 B/L",
+  "FIELD3":"IB 6116 BL",
   "FIELD4":"19",
   "FIELD5":"15.5",
   "FIELD6":"16",
@@ -3154,7 +3140,7 @@ var product_list = [
  {
   "FIELD1":"225",
   "FIELD2":"ICE  BUCKET D/W LARGE BLACK LEATHER",
-  "FIELD3":"WB 6117 B/L",
+  "FIELD3":"WB 6117 BL",
   "FIELD4":"25",
   "FIELD5":"22",
   "FIELD6":"23",
@@ -3168,7 +3154,7 @@ var product_list = [
  {
   "FIELD1":"226",
   "FIELD2":"COCKTAIL SHAKER BLACK LEATHER",
-  "FIELD3":"CS 6152 B/L",
+  "FIELD3":"CS 6152 BL",
   "FIELD4":"9",
   "FIELD5":"9",
   "FIELD6":"24",
@@ -3182,7 +3168,7 @@ var product_list = [
  {
   "FIELD1":"227",
   "FIELD2":"RED WINE COASTER BLACK LEATHER",
-  "FIELD3":"RW 705 BL",
+  "FIELD3":"RWC 705 BL",
   "FIELD4":"12",
   "FIELD5":"12",
   "FIELD6":"7",
@@ -3196,7 +3182,7 @@ var product_list = [
  {
   "FIELD1":"228",
   "FIELD2":"CHAMPAGNE COOLER D/W BLACK LEATHER",
-  "FIELD3":"CH 6106 B/L",
+  "FIELD3":"CH 6106 BL",
   "FIELD4":"12",
   "FIELD5":"12",
   "FIELD6":"20",
@@ -3434,7 +3420,7 @@ var product_list = [
  {
   "FIELD1":"245",
   "FIELD2":"WINE BUCKET WITHS STAND",
-  "FIELD3":"WB 242/S",
+  "FIELD3":"WB 242 S",
   "FIELD4":"26",
   "FIELD5":"26",
   "FIELD6":"85.5",
@@ -3854,7 +3840,7 @@ var product_list = [
  {
   "FIELD1":"275",
   "FIELD2":"WINE BUCKET",
-  "FIELD3":"CB6105",
+  "FIELD3":"CB 6105",
   "FIELD4":"25",
   "FIELD5":"19",
   "FIELD6":"21",
@@ -3952,7 +3938,7 @@ var product_list = [
  {
   "FIELD1":"282",
   "FIELD2":"BAR TRAY",
-  "FIELD3":"BT 6125/M",
+  "FIELD3":"BT 6125 M",
   "FIELD4":"35.5",
   "FIELD5":"35.5",
   "FIELD6":"3",

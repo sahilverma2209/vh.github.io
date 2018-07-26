@@ -1,3 +1,4 @@
+var directory_tag = 'Serving Dishes';
 var product_list = [
  {
    "FIELD1": "S.NO",

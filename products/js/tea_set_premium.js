@@ -1,3 +1,4 @@
+var directory_tag = 'Tea Set Premium';
 var product_list = [
  {
    "FIELD1": "S.NO",

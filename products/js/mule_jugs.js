@@ -1,3 +1,4 @@
+var directory_tag = 'Mule Jugs';
 var product_list = [
  {
    "FIELD1": "",

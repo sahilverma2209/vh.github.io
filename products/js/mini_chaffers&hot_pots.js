@@ -1,3 +1,4 @@
+var directory_tag = 'Mini Chaffers & Hot Pots';
 var products = [
  {
    "FIELD1": "S.NO",

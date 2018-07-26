@@ -1,3 +1,4 @@
+var directory_tag = 'Chaffing Dishes';
 var product_list = [
  {
    "FIELD1": "S.NO ",
