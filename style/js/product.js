@@ -1,3 +1,20 @@
+// dropdown ------
+
+$('.dropdown-item').hover(function(){
+    if($(this).html() == 'BAREWARE'){
+        $('.dropdown_dynamic_image').attr('src', '../assets/dropdown_images/barware.jpg');
+    }
+    else if($(this).html() == 'CHAFFING DISHES'){
+        $('.dropdown_dynamic_image').attr('src', '../assets/dropdown_images/chaffing.jpg');
+    }
+    else if($(this).html() == 'TABLEWARE'){
+        $('.dropdown_dynamic_image').attr('src', '../assets/dropdown_images/tableware.jpg');
+    }
+});
+
+
+
+
 var product = location.hash;
 var length = product.length;
 product = product.slice(1,length);
@@ -18,6 +35,15 @@ for(var i=0; i<product.length; i++){
 }
 console.log('category = ',cat);
 console.log('s page = ',selected_page);
+
+// making dropdown full width ----
+var left = $('.dropdown').offset();
+left = -left['left'];
+left = left+'px';
+
+$('.dropdown-menu').css('margin-left', left);
+//---------------------------------
+
 
 define([cat], function(){
 
@@ -42,7 +68,7 @@ define([cat], function(){
 
 
     // initialize page buttons
-    if(selected_page>=9)$('.pagination').append('<button id="prev_section"><</button>');
+    if(selected_page>=9)$('.pagination').append('<button id="prev_section">&#9668;</button>');
     if(page_sections >1){
         var id_no=1;
         for(var i=page_start; i<= page_end ; i++){
@@ -55,7 +81,7 @@ define([cat], function(){
             $('.pagination').append('<button class="pb" data-id="'+i+'" id="page'+i+'">'+i+'</button>');
         }  
     }
-    if(section_no<page_sections)$('.pagination').append('<button id="next_section">></button>');
+    if(section_no<page_sections)$('.pagination').append('<button id="next_section">&#9658;</button>');
     var btn_mod = selected_page%8;
     if(btn_mod == 0)btn_mod = 8;
     var btn_higlight = "#page"+btn_mod;
